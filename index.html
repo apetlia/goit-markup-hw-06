@@ -436,6 +436,37 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="name">Ім'я</label>
+            <input type="text" name="name" id="name" />
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="telephone">Телефон</label>
+            <input type="tel" name="telephone" id="telephone" />
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="email">Пошта</label>
+            <input type="email" name="email" id="email" />
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="comment">Коментар</label>
+            <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" name="licence" id="licence" />
+            <label class="modal-form-label" for="licence">
+              <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </span>
+            </label>
+          </div>
+
+          <button class="button modal-form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
