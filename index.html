@@ -364,10 +364,11 @@
         </div>
       </section>
     </main>
+
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-div-1">
+        <div class="footer-our-contacts">
           <a class="footer-logo link" href="./index.html"><span>Web</span>Studio</a>
           <address class="address">
             <ul class="address-list list">
@@ -391,7 +392,7 @@
             </ul>
           </address>
         </div>
-        <div class="footer-div-2">
+        <div class="footer-our-soc">
           <p>приєднуйтесь</p>
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
@@ -427,8 +428,20 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <p class="footer-form-title">Підпишіться на розсилку</p>
+          <input type="email" placeholder="E-mail" />
+          <button type="submit">
+            Підписатися
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn-close" data-modal-close type="button">
@@ -458,7 +471,7 @@
             <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
           </div>
 
-          <div class="form-checkbox">
+          <div class="modal-form-checkbox">
             <input type="checkbox" name="licence" id="licence" />
             <label class="modal-form-label" for="licence">
               <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </span>

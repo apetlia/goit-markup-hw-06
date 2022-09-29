@@ -191,7 +191,7 @@ img {
   padding-top: 200px;
   text-align: center;
   margin: 0 auto;
-
+  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -559,14 +559,14 @@ img {
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  /* opacity: 0; */
   transition: transform var(--animation-time);
+  opacity: 0;
   overflow: auto;
 }
 
 .project-item:hover .project-wrap-text {
   transform: translateY(0);
-  /* opacity: 1; */
+  opacity: 1;
 }
 
 .project-card-text {
@@ -656,11 +656,15 @@ img {
   color: var(--accent-color);
 }
 
-.footer-div-1 {
+.footer-our-contacts {
   margin-right: 70px;
 }
 
-.footer-div-2 > p {
+.footer-our-soc {
+  margin-right: 90px;
+}
+
+.footer-our-soc > p {
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -696,6 +700,61 @@ img {
 }
 
 .footer-soc-link > svg {
+  fill: currentColor;
+}
+
+.footer-form-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-form input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 10px;
+
+  outline: none;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.footer-form input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form button {
+  width: 200px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-form svg {
   fill: currentColor;
 }
 
@@ -774,8 +833,15 @@ img {
 .modal-form-field input {
   height: 40px;
 
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition: border-color var(--animation-time);
+}
+
+.modal-form-field input:focus {
+  border-color: var(--accent-color);
 }
 
 .modal-form-label {
@@ -795,6 +861,7 @@ img {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 
 .modal-form-field textarea::placeholder {
@@ -805,7 +872,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-checkbox {
+.modal-form-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -813,7 +880,7 @@ img {
   margin-bottom: 30px;
 }
 
-.form-checkbox .modal-form-label {
+.modal-form-checkbox .modal-form-label {
   margin: 0;
   margin-left: 8px;
 }
